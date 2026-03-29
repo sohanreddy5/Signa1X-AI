@@ -4,7 +4,7 @@ import yfinance as yf
 import google.generativeai as genai
 
 # ====== CONFIGURE GEMINI API ======
-genai.configure(api_key="AIzaSyAswZUOrC-dDQTTKCOpKYguZIB3mXKcg5s")
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 model = genai.GenerativeModel("models/gemini-flash-latest")
 
